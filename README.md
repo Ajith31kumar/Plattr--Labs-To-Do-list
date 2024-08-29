@@ -1,6 +1,4 @@
-Here’s a revised version of your README.md with proper formatting and additional details to ensure clarity and consistency:
 
----
 
 # Todo List Application
 
