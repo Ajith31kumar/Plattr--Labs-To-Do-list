@@ -73,6 +73,7 @@
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .showTask .title {
@@ -117,10 +118,11 @@
   padding: 15px 10px;
   display: flex;
   gap: 5px;
-  width: 350px;
+  width: 100%;
   box-shadow: var(--box-shadow);
   border-radius: 5px;
   border-left: 7px solid #000;
+  flex-wrap: wrap;
 }
 
 .showTask li p {
@@ -189,4 +191,24 @@ header h1 {
 .completed {
   text-decoration: line-through;
   color: #999;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .showTask ul {
+    flex-direction: column;
+  }
+
+  .showTask li {
+    width: 100%;
+  }
+
+  .addTask {
+    max-width: 100%;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
