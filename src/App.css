@@ -213,22 +213,20 @@ header h1 {
   }
 }
 
-.addTask form button {
-  background-color: #fff;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
-  transition: all 235ms ease-in-out;
-}
-
-/* Mobile Styles */
+/* Mobile Styles for screens smaller than 600px */
 @media (max-width: 600px) {
   .addTask form button {
     padding: 0.5rem; /* Adjust padding for smaller screens */
     font-size: 16px; /* Slightly smaller font size on mobile */
     width: 100%; /* Make the button take full width */
+  }
+}
+
+/* Mobile Styles for screens 332px and smaller */
+@media (max-width: 330px) {
+  .addTask form button {
+    padding: 0.4rem; /* Further adjust padding for very small screens */
+    font-size: 14px; /* Smaller font size for very small screens */
+    width: 100%; /* Keep the button taking full width */
   }
 }
